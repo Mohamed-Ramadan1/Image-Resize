@@ -1,0 +1,138 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #927DFC
+}
+
+.wrapper {
+    width: 450px;
+    height: 288px;
+    background: #fff;
+    border-radius: 9px;
+    padding: 30px;
+    border-radius: 6px;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active {
+    height: 537px;
+}
+
+.wrapper .upload-box {
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #afafaf;
+    cursor: pointer;
+}
+
+.upload-box p {
+    font-size: 1.06rem;
+    margin-top: 20px;
+}
+
+.wrapper .content {
+    opacity: 0;
+    margin-top: 28px;
+    pointer-events: none;
+}
+
+.wrapper.active .content {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s e;
+}
+
+.cont {
+    width: 50px;
+    height: 50px;
+}
+
+.wrapper.active .upload-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.wrapper.active .upload-box {
+    border: none;
+}
+
+.wrapper.active .upload-box p {
+    display: none;
+}
+
+.content .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .row .coulumn {
+    width: calc(100% / 2 - 15px);
+}
+
+.row .coulumn label {
+    font-size: 1.06rem;
+}
+
+.sizes .coulumn input {
+    width: 100%;
+    height: 49px;
+    margin-top: 7px;
+    padding: 0 15px;
+    font-size: 1.06rem;
+    outline: none;
+    border: 1px solid #aaa;
+
+}
+
+.sizes .coulumn input:focus {
+    padding: 0 14px;
+    border: 2px solid #927DFC;
+}
+
+.content .checkboxes {
+    margin-top: 20px;
+}
+
+.checkboxes .coulumn {
+    display: flex;
+    align-items: center;
+}
+
+.checkboxes .coulumn input {
+    width: 17px;
+    height: 17px;
+    margin-right: 9px;
+    accent-color: #927DFC;
+}
+
+.content .download-btn {
+    width: 100%;
+    padding: 15px 0;
+    margin: 30px 0 10px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #927DFC;
+    font-size: 1.06rem;
+    cursor: pointer;
+
+}
